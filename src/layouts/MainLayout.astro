@@ -3,8 +3,8 @@ const { title } = Astro.props
 
 import {ViewTransitions} from 'astro:transitions';
 
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
 ---
 
 <html lang="en">
@@ -21,7 +21,7 @@ import Footer from '../components/Footer.astro';
   </head>
   <body>
     <Navbar/>
-    <main class="my-8 pt-16 content min-h-[70vh]">
+    <main class="my-8 pt-10 min-h-[70vh]">
       <slot />
     </main>
     <Footer/>
