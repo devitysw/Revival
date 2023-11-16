@@ -56,7 +56,7 @@ h6 { font-size: 1.0rem !important; }
 /*Nav animations
 --------------------------------------------------*/
 
-.animated-underline {
+.animated-underline, .animated-underline-white {
     display: inline-block;
     text-decoration: none;
 }
@@ -70,7 +70,16 @@ h6 { font-size: 1.0rem !important; }
     transition: transform 250ms ease-in-out;
 }
 
-.animated-underline:hover::after {
+.animated-underline-white::after {
+    display: block;
+    content: '';
+    @apply border-b-2 border-white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animated-underline:hover::after, .animated-underline-white:hover::after {
     transform: scaleX(1);
 }
 
@@ -130,7 +139,7 @@ h6 { font-size: 1.0rem !important; }
 
 /* Buttons */
 
-.primary-button, button {
+.primary-button {
     @apply px-4 py-2 w-1/2 rounded-full text-center bg-contrast hover:bg-primary text-white;
 }
 

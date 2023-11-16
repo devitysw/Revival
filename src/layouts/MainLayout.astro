@@ -4,6 +4,7 @@ const { title } = Astro.props
 import {ViewTransitions} from 'astro:transitions';
 
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -23,6 +24,7 @@ import Navbar from '../components/Navbar.astro';
     <main class="my-8 pt-16 content min-h-[55vh]">
       <slot />
     </main>
+    <Footer/>
     <script src="../scripts/burger-menu.js"></script>
   </body>
 </html>
