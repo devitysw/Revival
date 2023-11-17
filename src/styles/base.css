@@ -154,7 +154,79 @@ h6 { font-size: 1.0rem !important; }
     @apply px-4 py-2 w-1/2 rounded-full text-center bg-contrast hover:bg-primary text-white;
 }
 
-button, a, .smooth-show {
+button, a, .smooth-show, .accordion {
     transition: 1s;
     cursor: pointer;
 }
+
+ .accordion {
+    @apply bg-white cursor-pointer p-4 w-full text-left border-none outline-none rounded-full;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  } 
+
+  
+  .arrow-cross-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .arrow,
+  .line-horizontal,
+  .line-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #333;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #333;
+    transform-origin: 50% 20%;
+  }
+
+  .line-horizontal {
+    width: 20px;
+    height: 3px;
+    margin-left: -10px;
+    background-color: #333;
+    transform-origin: 50% 50%;
+  }
+
+  .line-vertical {
+    width: 3px;
+    height: 20px;
+    margin-top: -10px;
+    background-color: #333;
+    transform-origin: 50% 50%;
+  }
+
+  .arrow-cross-container.active .arrow {
+    transform: rotateX(180deg);
+  }
+
+  .arrow-cross-container.active .line-horizontal {
+    transform: scaleX(0);
+  }
+
+  .arrow-cross-container.active .line-vertical {
+    transform: scaleY(0);
+  }

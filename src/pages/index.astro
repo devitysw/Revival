@@ -6,6 +6,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Reason from "@components/Reason.astro";
 import Title from "@components/Title.astro";
 import Subtitle from "@components/Subtitle.astro";
+import Faq from "@components/Faq.astro";
 
 import heroBg from "@assetsLocal/renders/f32.png";
 import reasonsBg from "@assetsLocal/renders/f121.png";
@@ -70,6 +71,24 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 					<Reason title="Dôvod 6" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section id="faq" class="content mt-24 flex flex-col">
+		<Subtitle title="faq"/>
+		<Title title="časté otázky"/>
+
+		<div class="mt-12 flex flex-col space-y-4">
+			<Faq question="Otázka 1" answer="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae" />
+			<Faq question="Otázka 2" answer="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae" />
+			<Faq question="Otázka 3" answer="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae" />
+		</div>
+
+		<div class="w-max mx-auto mt-12 flex flex-col space-y-4">
+			<p class="text-secondary">
+				Nenašli ste odpoveď na svoju otázku?
+			</p>
+			<a href="" class="primary-button mx-auto mt-20 tracking-wider">Napíšte nám</a>
 		</div>
 	</section>
 </MainLayout>
