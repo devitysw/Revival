@@ -2,8 +2,23 @@
 import "../styles/base.css";
 
 import MainLayout from "../layouts/MainLayout.astro";
+
+import heroBg from "@assetsLocal/renders/f32.png";
 ---
 
 <MainLayout title="Revival">
-	<h1>Astro</h1>
+	<section id="hero" class="w-full h-[60vh] xs:h-[75vh] s:h-[85vh] smd:h-[95vh] relative bg-[#DEDEDE] overflow-hidden">
+		<img src={heroBg.src} alt="" class="absolute w-[220vw] s:w-[200vw] smd:w-[180vw] md:w-[160vw] m:w-[140vw] lg:w-[120vw] l:w-full bottom-0 -right-28 xs:-right-40 md:-right-20 m:-right-12 l:right-0 max-w-none">
+		<div class="h-full flex m:items-stretch absolute left-[5%] lg:left-[7.5%] top-[15%] m:top-0">
+			<div class="m:self-center flex flex-col w-3/4 md:w-1/2 l:w-1/3">
+				<h2 class="uppercase tracking-wider">spoznajte</h2>
+				<span class="title uppercase tracking-wider">Revival</span>
+				<p class="text-secondary w-full sm:w-1/2 md:w-full l:w-full text-sm m:text-base mt-1">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ullamcorper ex, nec bibendum metus sagittis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+				<a href="" class="primary-button mt-12 w-2/3 md:w-4/5 tracking-wider px-2 text-xs s:text-base hidden xs:block">Viac o Revivale</a>
+			</div>
+		</div>
+		<a href="" class="primary-button mt-12 w-[70%] left-[15%] md:w-4/5 tracking-wider px-2 text-xs s:text-base block xs:hidden absolute bottom-4">Viac o Revivale</a>
+	</section>
 </MainLayout>

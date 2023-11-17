@@ -8,15 +8,20 @@ html, body {
 }
 
 .title { 
-    @apply text-[2rem] xs:text-[2.5rem] s:text-[3rem] m:text-[3.5rem] l:text-[4rem];
+    @apply text-5xl xs:text-6xl s:text-7xl m:text-8xl l:text-9xl;
 }
 
-h1, h2, h3, h4, h5, h6, .titleFont, .title {
+h1, h2, h3, h4, h5, h6, .title {
     font-weight: 700 !important;
+    @apply text-contrast;
 }
 
-h1 { font-size: 2rem !important; }
-h2 { font-size: 1.741rem !important; }
+h1 {
+    @apply text-3xl xs:text-4xl s:text-5xl m:text-6xl l:text-7xl;
+}
+h2 {
+    @apply text-2xl xs:text-3xl s:text-4xl m:text-5xl l:text-6xl;
+}
 h3 { font-size: 1.516rem !important; }
 h4 { font-size: 1.320rem !important; }
 h5 { font-size: 1.149rem !important; }
@@ -140,6 +145,9 @@ h6 { font-size: 1.0rem !important; }
 /* Buttons */
 
 .primary-button {
+    @apply px-16 py-3 rounded-full text-center bg-contrast hover:bg-primary text-white;
+}
+.nav-button {
     @apply px-4 py-2 w-1/2 rounded-full text-center bg-contrast hover:bg-primary text-white;
 }
 
