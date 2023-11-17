@@ -5,6 +5,10 @@ import {ViewTransitions} from 'astro:transitions';
 
 import Navbar from '@components/Navbar.astro';
 import Footer from '@components/Footer.astro';
+
+import logo from "@assetsLocal/icons/r-dark.svg";
+import logoDark from "@assetsLocal/icons/r-light.svg";
+
 ---
 
 <html lang="en">
@@ -14,10 +18,29 @@ import Footer from '@components/Footer.astro';
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link id="favicon" rel="icon" href="light-favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <ViewTransitions />
+    <script define:vars={{logo, logoDark}}>
+      function updateFavicon() {
+        const favicon = document.getElementById('favicon');
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+        if (isDarkMode) {
+          favicon.href = logoDark.src;
+        } else {
+          favicon.href = logo.src;
+        }
+      }
+  
+      // Initial update on page load
+      updateFavicon();
+  
+      // Listen for changes in color scheme preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+    </script>
   </head>
   <body>
     <Navbar/>
