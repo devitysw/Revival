@@ -1,0 +1,39 @@
+﻿---
+import "../styles/base.css";
+
+import MainLayout from "@layouts/MainLayout.astro";
+
+import Title from "@components/Title.astro";
+---
+
+<MainLayout title="Kontakt">
+    <section id="about" class="content pt-24 flex flex-col pb-20">
+		<Title title="kontaktný formulár"/>
+        <p class="w-full text-secondary text-center mt-2 text-lg">
+            Zaujal Vás náš produkt? Máte ohľadne neho ďalšie otázky? Neváhajte nás kontaktovať cez formulár nižšie. Radi Vám odpovieme.
+        </p>
+
+        <form action="#" method="POST" class="mx-auto max-w-xl mt-12">
+            <div class="flex flex-col space-y-4">
+                <div class="">
+                    <label for="email" class="block text-sm font-semibold leading-6 text-primary tracking-wider">Kontaktný e-mail&nbsp;<span class="text-red-500">*</span></label>
+                    <div class="mt-2.5">
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="mail@mail.sk" class="block w-full rounded-3xl border-0 px-3.5 py-2 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="">
+                    <label for="message" class="block text-sm font-semibold leading-6 text-primary tracking-wider">Správa&nbsp;<span class="text-red-500">*</span></label>
+                    <div class="mt-2.5">
+                        <textarea name="message" id="message" rows="4" placeholder="Správa ..." class="block w-full rounded-3xl border-0 px-3.5 py-2 text-primary shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    Odoslaním formulára súhlasíte so&nbsp;<a href="#" class="font-semibold text-indigo-600 animated-underline">Zásadami ochrany osobných údajov</a>.
+                </div>
+                <div class="mt-10 w-full">
+                    <button type="submit" class="primary-button w-full">Odoslať</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</MainLayout>
