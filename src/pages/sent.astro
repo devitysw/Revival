@@ -1,0 +1,16 @@
+﻿---
+import "../styles/base.css";
+
+import MainLayout from "@layouts/MainLayout.astro";
+
+import image from "@assetsLocal/images/sent.svg";
+---
+
+<MainLayout title="Hups! Táto stránka neexistuje">
+    <div class="w-full pt-24 pb-12">
+        <div class="w-max max-w-[90%] mx-auto text-center">
+            <img src={image.src} alt="ilustracia nefungujuceho robota" class="w-96 max-w-[90%] mx-auto" loading="lazy">
+            <p class="text-secondary mt-2">Vaša správa bola odoslaná. Naši zamestnanci Vás čoskoro kontaktujú.</p>
+        </div>
+    </div>
+</MainLayout>
