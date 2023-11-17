@@ -10,6 +10,7 @@ import Faq from "@components/Faq.astro";
 
 import heroBg from "@assetsLocal/renders/f32.png";
 import reasonsBg from "@assetsLocal/renders/f121.png";
+import buyBg from "@assetsLocal/renders/f23.png";
 import flower from "@assetsLocal/icons/flower.svg";
 import leafs from "@assetsLocal/icons/leafs.svg";
 ---
@@ -89,6 +90,22 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 				Nenašli ste odpoveď na svoju otázku?
 			</p>
 			<a href="" class="primary-button mx-auto mt-20 tracking-wider">Napíšte nám</a>
+		</div>
+	</section>
+
+	<section id="buy" class="mt-24 bg-left-bottom bg-no-repeat bg-cover" style={{backgroundImage: `url('${buyBg.src}')`,}}>
+		<div class="py-12 m:py-24 bg-opacity-100 bg-[#dedede] m:bg-transparent m:bg-opacity-0">
+			<div class="content flex flex-row justify-end ">
+				<div class="w-full m:w-1/2 flex flex-col ">
+					<h1 class="text-3xl sm:text-5xl tracking-wider text-center m:text-left font-black mt-4 text-contrast uppercase">
+						zaujal vás revival?
+					</h1>
+					<p class="text-secondary w-full mt-2 text-center m:text-left">
+						Fusce at tincidunt quam. Donec vitae ornare enim. Nullam dictum eu enim a porta. Morbi vitae dictum urna, sed.
+					</p>
+					<a href="" class="primary-button w-max mx-auto m:mx-0 mt-12 m:mt-20 tracking-wider">Kúpiť Revival</a>
+				</div>
+			</div>
 		</div>
 	</section>
 </MainLayout>
