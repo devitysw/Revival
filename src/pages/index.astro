@@ -3,7 +3,12 @@ import "../styles/base.css";
 
 import MainLayout from "../layouts/MainLayout.astro";
 
+import Reason from "@components/Reason.astro";
+import Title from "@components/Title.astro";
+import Subtitle from "@components/Subtitle.astro";
+
 import heroBg from "@assetsLocal/renders/f32.png";
+import reasonsBg from "@assetsLocal/renders/f121.png";
 import flower from "@assetsLocal/icons/flower.svg";
 import leafs from "@assetsLocal/icons/leafs.svg";
 ---
@@ -25,8 +30,8 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 	</section>
 
 	<section id="about" class="content mt-24 flex flex-col">
-		<h3 class="text-sm tracking-wider font-light text-center text-primary uppercase">o produkte</h3>
-		<h1 class="text-3xl sm:text-5xl tracking-wider font-black text-center mt-2 text-contrast uppercase">Čo je to revival</h1>
+		<Subtitle title="o produkte"/>
+		<Title title="Čo je to revival"/>
 
 		<p class="text-tertiary w-full m:w-3/4 l:w-2/3 text-sm sm:text-base m:text-lg mt-4 sm:mt-8 text-center mx-auto tracking-wider">
 			Fusce at tincidunt quam. Donec vitae ornare enim. Nullam dictum eu enim a porta. Morbi vitae dictum urna, sed pulvinar sapien. Praesent convallis ac nisi eu sodales. Nullam eleifend sodales ante. Vestibulum nec egestas nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Donec nisl dui, dictum ultricies sem nec, lacinia imperdiet metus. Proin laoreet hendrerit arcu quis luctus.
@@ -42,6 +47,28 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 			<div class="w-full s:w-1/3 mx-auto">
 				<img src={leafs.src} alt="" class="w-16 h-16 md:w-24 md:h-24 mx-auto">
 				<h4 class="text-center mt-2 text-primary">Na prírodnej báze</h4>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="reasons" class="mt-32 flex flex-col bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url('${reasonsBg.src}')`,}}>
+		<div class="w-full h-full bg-opacity-50 bg-white m:bg-transparent m:bg-opacity-0">
+			<div class="content pt-12 pb-24">
+				<Subtitle title="výhody revivalu"/>
+				<Title title="prečo užívať revival"/>
+			
+				<div class="mt-12 grid grid-cols-1 m:grid-cols-3 l:grid-cols-4 gap-4 backdrop-blur-sm m:backdrop-blur-none">
+					<Reason title="Dôvod 1" float="text-left m:text-right" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+					<div class="hidden m:block l:col-span-2"></div>
+					<Reason title="Dôvod 2" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+					<Reason title="Dôvod 3" float="text-left m:text-right" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+					<div class="hidden m:block l:col-span-2"></div>
+					<Reason title="Dôvod 4" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+					<Reason title="Dôvod 5" float="text-left m:text-right" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+					<div class="hidden m:block l:col-span-2"></div>
+					<Reason title="Dôvod 6" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+				</div>
 			</div>
 		</div>
 	</section>

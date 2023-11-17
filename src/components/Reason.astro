@@ -1,0 +1,10 @@
+﻿---
+    const { title, desc, float } = Astro.props
+---
+
+<div class="w-full flex flex-col space-y-2 m:mt-8">
+    <h4 class=`mt-2 font-bold ${float}`>{title}</h4>
+    <p class=`text-secondary m:text-tertiary w-full text-sm sm:text-base m:text-lg ${float} tracking-wider`>
+        {desc}
+    </p>
+</div>
