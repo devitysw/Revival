@@ -13,6 +13,8 @@ import reasonsBg from "@assetsLocal/renders/f121.png";
 import buyBg from "@assetsLocal/renders/f23.png";
 import flower from "@assetsLocal/icons/flower.svg";
 import leafs from "@assetsLocal/icons/leafs.svg";
+
+const buyLink = "https://google.com";
 ---
 
 <MainLayout title="Revival">
@@ -25,13 +27,14 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 				<p class="text-secondary w-full sm:w-1/2 md:w-full l:w-full text-sm m:text-base mt-1">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ullamcorper ex, nec bibendum metus sagittis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				</p>
-				<a href="" class="primary-button mt-12 w-2/3 md:w-4/5 tracking-wider px-2 text-xs s:text-base hidden xs:block">Viac o Revivale</a>
+				<a href=`${import.meta.env.BASE_URL}#about` class="primary-button mt-12 w-2/3 md:w-4/5 tracking-wider px-2 text-xs s:text-base hidden xs:block">Viac o Revivale</a>
 			</div>
 		</div>
-		<a href="" class="primary-button mt-12 w-[70%] left-[15%] md:w-4/5 tracking-wider px-2 text-xs s:text-base block xs:hidden absolute bottom-4">Viac o Revivale</a>
+		<a href=`${import.meta.env.BASE_URL}#about` class="primary-button mt-12 w-[70%] left-[15%] md:w-4/5 tracking-wider px-2 text-xs s:text-base block xs:hidden absolute bottom-4">Viac o Revivale</a>
 	</section>
 
-	<section id="about" class="content mt-24 flex flex-col">
+	<span id="about"></span>
+	<section class="content mt-24 flex flex-col">
 		<Subtitle title="o produkte"/>
 		<Title title="Čo je to revival"/>
 
@@ -39,7 +42,7 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 			Fusce at tincidunt quam. Donec vitae ornare enim. Nullam dictum eu enim a porta. Morbi vitae dictum urna, sed pulvinar sapien. Praesent convallis ac nisi eu sodales. Nullam eleifend sodales ante. Vestibulum nec egestas nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Donec nisl dui, dictum ultricies sem nec, lacinia imperdiet metus. Proin laoreet hendrerit arcu quis luctus.
 		</p>
 
-		<a href="" class="primary-button mx-auto mt-20 tracking-wider">Kúpiť Revival</a>
+		<a href={buyLink} target="_blank" class="primary-button mx-auto mt-20 tracking-wider">Kúpiť Revival</a>
 
 		<div class="mt-24 flex flex-col s:flex-row s:justify-around space-y-12 s:space-y-0 w-full md:w-3/4 lg:w-2/3 l:w-1/2 mx-auto">
 			<div class="w-full s:w-1/3 mx-auto">
@@ -53,8 +56,8 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 		</div>
 	</section>
 
-	
-	<section id="reasons" class="mt-32 flex flex-col bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url('${reasonsBg.src}')`,}}>
+	<span id="reasons"></span>
+	<section class="mt-24 flex flex-col bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url('${reasonsBg.src}')`,}}>
 		<div class="w-full h-full bg-opacity-50 bg-white m:bg-transparent m:bg-opacity-0">
 			<div class="content pt-12 pb-24">
 				<Subtitle title="výhody revivalu"/>
@@ -75,7 +78,8 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 		</div>
 	</section>
 
-	<section id="faq" class="content mt-24 flex flex-col">
+	<span id="faq"></span>
+	<section class="content mt-24 flex flex-col">
 		<Subtitle title="faq"/>
 		<Title title="časté otázky"/>
 
@@ -89,11 +93,12 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 			<p class="text-secondary">
 				Nenašli ste odpoveď na svoju otázku?
 			</p>
-			<a href="" class="primary-button mx-auto mt-20 tracking-wider">Napíšte nám</a>
+			<a href=`${import.meta.env.BASE_URL}/contact/` class="primary-button mx-auto mt-20 tracking-wider">Napíšte nám</a>
 		</div>
 	</section>
 
-	<section id="buy" class="mt-24 bg-left-bottom bg-no-repeat bg-cover" style={{backgroundImage: `url('${buyBg.src}')`,}}>
+	<span id="buy"></span>
+	<section class="mt-24 bg-left-bottom bg-no-repeat bg-cover" style={{backgroundImage: `url('${buyBg.src}')`,}}>
 		<div class="py-12 m:py-24 bg-opacity-100 bg-[#dedede] m:bg-transparent m:bg-opacity-0">
 			<div class="content flex flex-row justify-end ">
 				<div class="w-full m:w-1/2 flex flex-col ">
@@ -103,7 +108,7 @@ import leafs from "@assetsLocal/icons/leafs.svg";
 					<p class="text-secondary w-full mt-2 text-center m:text-left">
 						Fusce at tincidunt quam. Donec vitae ornare enim. Nullam dictum eu enim a porta. Morbi vitae dictum urna, sed.
 					</p>
-					<a href="" class="primary-button w-max mx-auto m:mx-0 mt-12 m:mt-20 tracking-wider">Kúpiť Revival</a>
+					<a href={buyLink} target="_blank" class="primary-button w-max mx-auto m:mx-0 mt-12 m:mt-20 tracking-wider">Kúpiť Revival</a>
 				</div>
 			</div>
 		</div>

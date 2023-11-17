@@ -1,3 +1,7 @@
+---
+const buyLink = "https://google.com";
+---
+
 <div id="navbar" class="w-full shadow-md py-4 z-50 fixed bg-white top-0">
     <div class="content grid grid-cols-5 gap-2 text-xs l:text-lg tracking-widest uppercase">
         <div class="col-span-1 s:col-span-2 md:col-span-1 flex items-stretch">
@@ -7,22 +11,22 @@
         </div>
         <div class="hidden md:block col-span-3">
             <div class="flex flex-row justify-around space-x-4 w-full h-full items-stretch">
-                <a href=`${import.meta.env.BASE_URL}` class="self-center animated-underline">
+                <a href=`${import.meta.env.BASE_URL}#about` class="self-center animated-underline">
                     Čo je revival
                 </a>
-                <a href=`${import.meta.env.BASE_URL}` class="self-center animated-underline">
+                <a href=`${import.meta.env.BASE_URL}#reasons` class="self-center animated-underline">
                     prečo ho používať
                 </a>
-                <a href=`${import.meta.env.BASE_URL}` class="self-center animated-underline">
+                <a href=`${import.meta.env.BASE_URL}#faq` class="self-center animated-underline">
                     FAQ
                 </a>
-                <a href=`${import.meta.env.BASE_URL}` class="self-center animated-underline">
+                <a href=`${import.meta.env.BASE_URL}/contact/` class="self-center animated-underline">
                     kontakt
                 </a>
             </div>
         </div>
         <div class="col-span-4 s:col-span-3 md:col-span-1 w-full flex flex-row justify-end space-x-8 h-full items-stretch">
-            <a href=`${import.meta.env.BASE_URL}` class="self-center items-stretch md:w-[80%] nav-button float-right font-normal">
+            <a href={buyLink} target="_blank" class="self-center items-stretch md:w-[80%] nav-button float-right font-normal">
                 <div class="self-center">
                     Kúpiť
                 </div>
@@ -40,13 +44,13 @@
 <div id="menu" class="w-full h-screen hidden z-40 fixed backdrop-blur-sm">
     <div class="tracking-widest">
         <div class="flex flex-col max-w-[90%] mx-auto">
-            <a class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">Čo je revival</a>
+            <a href=`${import.meta.env.BASE_URL}#about` class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">Čo je revival</a>
             <hr class="w-full border-0 border-b border-gray-300">
-            <a class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">Prečo ho používať</a>
+            <a href=`${import.meta.env.BASE_URL}#reasons` class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">Prečo ho používať</a>
             <hr class="w-full border-0 border-b border-gray-300">
-            <a class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">FAQ</a>
+            <a href=`${import.meta.env.BASE_URL}#faq` class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">FAQ</a>
             <hr class="w-full border-0 border-b border-gray-300">
-            <a class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">Kontakt</a>
+            <a href=`${import.meta.env.BASE_URL}/contact/` class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4">Kontakt</a>
         </div>
     </div>
 </div>
