@@ -1,10 +1,17 @@
-﻿---
-    const { title, desc, float } = Astro.props
+---
+    const { title, desc, index } = Astro.props
 ---
 
 <div class="w-full flex flex-col space-y-2 m:mt-8">
-    <h4 class=`mt-2 font-bold ${float}`>{title}</h4>
-    <p class=`text-secondary m:text-tertiary w-full text-sm sm:text-base m:text-lg ${float} tracking-wider`>
+    <div class="flex flex-row items-stretch space-x-2">
+        <div class="flex items-center justify-center">
+            <div class="w-10 h-10 bg-transparent border-4 border-contrast text-contrast font-bold rounded-full flex items-center justify-center">
+                <h6>{index}</h6>
+            </div>
+        </div>
+        <h5 class=` font-bold self-center`>{title}</h5>
+    </div>
+    <p class="text-secondary m:text-tertiary w-full text-xs sm:text-sm tracking-wider text-justify">
         {desc}
     </p>
 </div>

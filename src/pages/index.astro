@@ -25,7 +25,7 @@ const buyLink = "https://google.com";
 				<h2 class="uppercase tracking-wider font-semibold">spoznajte</h2>
 				<span class="title uppercase tracking-wider font-bold">Revival</span>
 				<p class="text-secondary w-full sm:w-1/2 md:w-full l:w-full text-sm m:text-base mt-1">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ullamcorper ex, nec bibendum metus sagittis vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Revival napomáha pri problémoch&nbsp;so zápalom&nbsp;s priaznivým vplyvom&nbsp;na fyziologickú regeneráciu tkanív. Svojim zložením&nbsp;je vhodný&nbsp;na pravidelné, preventívne alebo dlhodobé užívanie.
 				</p>
 				<a href=`${import.meta.env.BASE_URL}#about` class="primary-button mt-12 w-2/3 md:w-4/5 tracking-wider px-2 text-xs s:text-base hidden xs:block">Viac o Revivale</a>
 			</div>
@@ -39,7 +39,7 @@ const buyLink = "https://google.com";
 		<Title title="Čo je to revival"/>
 
 		<p class="text-tertiary w-full m:w-3/4 l:w-2/3 text-sm sm:text-base m:text-lg mt-4 sm:mt-8 text-center mx-auto tracking-wider">
-			Fusce at tincidunt quam. Donec vitae ornare enim. Nullam dictum eu enim a porta. Morbi vitae dictum urna, sed pulvinar sapien. Praesent convallis ac nisi eu sodales. Nullam eleifend sodales ante. Vestibulum nec egestas nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Donec nisl dui, dictum ultricies sem nec, lacinia imperdiet metus. Proin laoreet hendrerit arcu quis luctus.
+			REVIVAL využíva patentované zloženie účinných látok ako je amid mastnej kyseliny PEA, Uridin, kyselina Alfa Lipoova, vitamíny B6, B12, B1, kyselina listová&nbsp;a vitamín C&nbsp;a ich schopnosť dostať sa až&nbsp;k samotnému miestu poškodenia&nbsp;a to až&nbsp;do periférnych nervových zakončení. Vysoký stupeň vstrebateľnosti&nbsp;v mieste poškodenia účinne pomáha&nbsp;s procesom hojenia. Funguje na princípe aktivácie kaskádovitej reakcie, ktorej výsledný efekt tlmí zápal, potláča opuch&nbsp;a regeneruje nervy. Revival má priaznivý vplyv&nbsp;na fyziologickú regeneráciu tkaniva&nbsp;a je vhodný&nbsp;na dlhodobé, pravidelné aj preventívne užívanie. Užívanie Revivalu prináša priaznivú zmenu už po niekoľkých týždňoch.
 		</p>
 
 		<a href={buyLink} target="_blank" class="primary-button mx-auto mt-20 tracking-wider">Kúpiť Revival</a>
@@ -58,21 +58,31 @@ const buyLink = "https://google.com";
 
 	<span id="reasons"></span>
 	<section class="mt-24 flex flex-col bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url('${reasonsBg.src}')`,}}>
-		<div class="w-full h-full bg-opacity-50 bg-white m:bg-transparent m:bg-opacity-0">
+		<div class="w-full h-full bg-opacity-50 bg-white ">
 			<div class="content pt-12 pb-24">
 				<Subtitle title="výhody revivalu"/>
 				<Title title="prečo užívať revival"/>
+				
+				<p class="text-tertiary w-full m:w-3/4 l:w-2/3 text-sm sm:text-base m:text-lg mt-4 sm:mt-8 text-center mx-auto tracking-wider">
+					Revival obsahuje jedinečnú patentovanú kombináciu troch účinných látok ktoré pôsobia priamo&nbsp;v mieste bolesti&nbsp;a vďaka svojmu zloženiu zaručujú najvyššiu možnú vstrebateľnosť. Svojim unikátnym zložením kyseliny alfa-lipoovej, kyseliny uridín 5 monofosforečnej&nbsp;a palmitoyletanolamidu (PEA) zabezpečuje úľavu&nbsp;od bolesti&nbsp;a zápalových stavov. 
+				</p>
 			
-				<div class="mt-12 grid grid-cols-1 m:grid-cols-3 l:grid-cols-4 gap-4 backdrop-blur-sm m:backdrop-blur-none">
-					<Reason title="Dôvod 1" float="text-left m:text-right" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
-					<div class="hidden m:block l:col-span-2"></div>
-					<Reason title="Dôvod 2" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
-					<Reason title="Dôvod 3" float="text-left m:text-right" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
-					<div class="hidden m:block l:col-span-2"></div>
-					<Reason title="Dôvod 4" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
-					<Reason title="Dôvod 5" float="text-left m:text-right" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
-					<div class="hidden m:block l:col-span-2"></div>
-					<Reason title="Dôvod 6" float="text-left" desc="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae"/>
+				<div class="mt-12 grid grid-cols-1 m:grid-cols-2 gap-4 backdrop-blur-sm">
+					<div class="w-[90%]">
+						<Reason title="Kyselina alfa-lipoova (ALA)" index="1" desc="Je jedným&nbsp;z najvýznamnejších&nbsp;a najdôležitejších antioxidantov, tzn. podieľa sa&nbsp;na metabolických detoxikačných procesoch (spája menšie metabolity,&nbsp;čo umožňuje lepšie vychytávanie&nbsp;a ich transport). Štruktúra kyseliny alfa-lipoovej preniká hlboko&nbsp;do buniek; umožňuje&nbsp;a podporuje regeneráciu poškodených sekvencii štruktúr DNA, tukov, ale aj proteínov,&nbsp;a to hlavne&nbsp;v poškodenom nervovom systéme."/>
+					</div>
+					<div class="w-[90%] m:mr-0 m:ml-auto">
+						<Reason title="Kyselina uridín-5-monofosforečná " index="2" desc="Nukleotid, ktorý je jednou&nbsp;z esenciálnych stavebných zložiek pri syntéze novej RNA. Ich úlohou&nbsp;v bunkách je aktivácia tvorby bielkovín, stavebnej zložky bunkových štruktúr. Kyselina uridín-5-monofosforečná podporuje regeneráciu&nbsp;a rast nervových tkanív cez faktor rastu nervu, podporuje tvorbu nových nervových spojení&nbsp;a vplýva na zvýšenie produkcie látok umožňujúcich prenášanie vzruchov."/>
+					</div>
+					<div class="w-[90%]">
+						<Reason title="Palmitoyletanolamidu (PEA)" index="3" desc="Zlúčenina, ktorá sa prirodzene vytvára skoro&nbsp;v každej bunke ľudského tela. V&nbsp;poškodených tkanivách sa spúšťajú procesy, ktoré podporujú&nbsp;a udržiavajú chronický zápal, ale aj chronickú bolesť. Hlavnou úlohou PEA je potláčať kaskádu škodlivých chronických procesov. PEA normalizuje nevyvážené biologické procesy spôsobené zápalom, traumou alebo oxidačným stresom."/>
+					</div>
+					<div class="w-[90%] m:mr-0 m:ml-auto">
+						<Reason title="Vitamín B1 (Tiamín)" index="4" desc="Tiamín sa nazýva ,,duševným vitamínom“, pretože má priaznivý vplyv&nbsp;na nervový systém&nbsp;a duševný výkon. Prebytok vitamínu B1 sa v&nbsp;tele neuskladní, preto je každodenné nahradzovanie nevyhnutné"/>
+					</div>
+					<div class="w-[90%]">
+						<Reason title="Vitamín B6 ( Pyridoxín )" index="5" desc="Pyridoxín sa viaže&nbsp;na bielkovinové časti celého radu enzýmov a&nbsp;umožňuje ich katalytickú aktivitu, čo znamená, že pomáha urýchľovať metabolické a&nbsp;chemické reakcie v&nbsp;bunkách. Je zodpovedný za&nbsp;fungovanie nervového systému, ovplyvňuje krvný tlak, činnosť srdca a&nbsp;svalové kontrakcie a&nbsp;podporuje imunitu."/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -84,9 +94,9 @@ const buyLink = "https://google.com";
 		<Title title="časté otázky"/>
 
 		<div class="mt-12 flex flex-col space-y-4">
-			<Faq question="Otázka 1" answer="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae" />
-			<Faq question="Otázka 2" answer="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae" />
-			<Faq question="Otázka 3" answer="Duis eget dui id magna eleifend sagittis. Nam eget facilisis sapien. Integer in nibh volutpat, venenatis arcu vitae" />
+			<Faq question="Pre koho je Revival určený ?" answer="Pre každého koho trápi akútne alebo chronické zápalové ochorenie ako napríklad akútny aj chronický radikulárny syndróm  akútny neurogénny blok, lymfedémy, niektoré pooperačné stavy, polyneuropatia, diabetická neuropatia, degeneratívne ochorenia ( Alzheimerova a Parkinsonova choroba), pásový opar, herpes simplex, suplementácia pred nasadením chemoterapie." />
+			<Faq question="Môžem Revival užívať aj preventívne ?" answer="Revival je určený aj na bezpečné dlhodobé pravidelné užívanie ako prevencia vzniku zapalových ochorení." />
+			<Faq question="Nežiadúce vedľajšie účinky " answer="V klinických štúdiách ktoré boli vykonané pre jednotlivé komponenty výživového doplnku Revival nebol zaznamenaný žiaden vedľajší nežiadúci účinok." />
 		</div>
 
 		<div class="w-max mx-auto mt-12 flex flex-col space-y-4">
