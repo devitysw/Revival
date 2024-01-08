@@ -58,7 +58,7 @@ const buyLink = "https://google.com";
 
 	<span id="reasons"></span>
 	<section class="mt-24 flex flex-col bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url('${reasonsBg.src}')`,}}>
-		<div class="w-full h-full bg-opacity-50 bg-white ">
+		<div class="w-full h-full bg-opacity-50 bg-white backdrop-blur-sm">
 			<div class="content pt-12 pb-24">
 				<Subtitle title="výhody revivalu"/>
 				<Title title="prečo užívať revival"/>
@@ -66,8 +66,8 @@ const buyLink = "https://google.com";
 				<p class="text-tertiary w-full m:w-3/4 l:w-2/3 text-sm sm:text-base m:text-lg mt-4 sm:mt-8 text-center mx-auto tracking-wider">
 					Revival obsahuje jedinečnú patentovanú kombináciu troch účinných látok ktoré pôsobia priamo&nbsp;v mieste bolesti&nbsp;a vďaka svojmu zloženiu zaručujú najvyššiu možnú vstrebateľnosť. Svojim unikátnym zložením kyseliny alfa-lipoovej, kyseliny uridín 5 monofosforečnej&nbsp;a palmitoyletanolamidu (PEA) zabezpečuje úľavu&nbsp;od bolesti&nbsp;a zápalových stavov. 
 				</p>
-			
-				<div class="mt-12 grid grid-cols-1 m:grid-cols-2 gap-4 backdrop-blur-sm">
+				
+				<div class="mt-12 grid grid-cols-1 m:grid-cols-2 gap-4">
 					<div class="w-[90%]">
 						<Reason title="Kyselina alfa-lipoova (ALA)" index="1" desc="Je jedným&nbsp;z najvýznamnejších&nbsp;a najdôležitejších antioxidantov, tzn. podieľa sa&nbsp;na metabolických detoxikačných procesoch (spája menšie metabolity,&nbsp;čo umožňuje lepšie vychytávanie&nbsp;a ich transport). Štruktúra kyseliny alfa-lipoovej preniká hlboko&nbsp;do buniek; umožňuje&nbsp;a podporuje regeneráciu poškodených sekvencii štruktúr DNA, tukov, ale aj proteínov,&nbsp;a to hlavne&nbsp;v poškodenom nervovom systéme."/>
 					</div>
@@ -108,7 +108,7 @@ const buyLink = "https://google.com";
 	</section>
 
 	<span id="buy"></span>
-	<section class="mt-24 bg-left-bottom bg-no-repeat bg-cover" style={{backgroundImage: `url('${buyBg.src}')`,}}>
+	<section class="mt-24 bg-left-bottom bg-no-repeat bg-contain bg-bgGray" style={{backgroundImage: `url('${buyBg.src}')`,}}>
 		<div class="py-12 m:py-24 bg-opacity-100 bg-[#dedede] m:bg-transparent m:bg-opacity-0">
 			<div class="content flex flex-row justify-end ">
 				<div class="w-full m:w-1/2 flex flex-col ">

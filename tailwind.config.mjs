@@ -21,6 +21,7 @@ export default {
 				tertiary: 'hsl(236, 6%, 46%)',
 				contrast: 'hsl(226, 56%, 40%)',
 				bg: 'hsl(0, 0%, 100%)',
+                bgGray: 'hsl(0, 0%, 87%)',
             }
         },
 	},
