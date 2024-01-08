@@ -55,7 +55,7 @@ h6 { font-size: 1.0rem !important; }
 }
 
 .content {
-    @apply w-[90%] max-w-[90%] lg:w-[85%] lg:max-w-[90%] mx-auto;
+    @apply w-[90%] max-w-[90%] lg:w-[85%] lg:max-w-[90%] xl:max-w-[60%] mx-auto;
 }
 
 .my-shadow {
